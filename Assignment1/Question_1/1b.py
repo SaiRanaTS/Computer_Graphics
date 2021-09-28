@@ -1,3 +1,5 @@
+# Question (b) : Convert vector r = (1, 2, 3) to a unit vector
+
 import numpy as np
 
 r = np.array([1,2,3])

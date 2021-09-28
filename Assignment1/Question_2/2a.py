@@ -1,6 +1,15 @@
+"""
+Question (a): Given the triangle defined by points P1(0, 2, 0), P2(0, 0, 4), and P3(3, 1, 2),
+compute the barycentric coordinates for points:
+-PA(0, 2, 0)
+-PB(0, 0, 4)
+-PC(3, 1, 2)
+-PD(1, 1, 2)
+
+
+"""
+
 import numpy as np
-
-
 
 def b_centric(x):
     Tri_area = 0.5 * np.linalg.norm((np.cross((p2 - p1), (p3 - p1))))

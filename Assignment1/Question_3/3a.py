@@ -1,5 +1,20 @@
-import numpy as np
+"""
+Consider a scene with a sphere and a triangle. The sphere’s center is at (0, 0, 0) and its radius is 1. The
+triangle has vertices (2, 0, 0), (0, 2, 0), and (0, 0, 2). The camera (ray origin) is at (√3,√3,√3) and the ray
+direction is (−√13,−√13,−√13).
 
+Answer the following questions. The answers can be unreduced – they can be in terms of square roots,
+fractions, and (inverse) trigonometric functions.
+
+"""
+
+"""
+Question (a): Does the ray intersect the sphere? If yes, what data (position, normal, and t) would be put in the
+intersection record? If not, why?
+"""
+
+
+import numpy as np
 
 def evaluvation(c,r,d,o):
     a = np.dot(d,d)

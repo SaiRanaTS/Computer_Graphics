@@ -1,3 +1,5 @@
+# Question (e): Calculate the vector normal to the plane defined by the points P1(5, 0, 0), P2(0, 0, 5), and P3(10, 0, 5).
+
 import numpy as np
 
 p1 = np.array([5,0,0])

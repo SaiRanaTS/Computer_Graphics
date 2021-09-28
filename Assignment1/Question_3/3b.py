@@ -1,3 +1,8 @@
+"""
+Question(b): Does the ray intersect the triangle? If yes, what data would be put in the intersection record? If not,
+why?
+"""
+
 import numpy as np
 
 def intersection(a,b,c,O,D):

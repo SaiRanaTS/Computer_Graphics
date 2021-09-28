@@ -1,3 +1,5 @@
+# Question (c) :Compute the magnitude of r + s, where r = (2, 3, 4) and s = (5, 6, 7).
+
 import numpy as np
 
 r = np.array([2,3,4])

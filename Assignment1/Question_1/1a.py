@@ -1,5 +1,7 @@
-import numpy as np
 
+# The Question (a) : Calculate the magnitude of the position vector p, for point P(4, 5, 6).
+
+import numpy as np
 
 p = np.array([4,5,6])
 mag = round(np.linalg.norm(p),3)

@@ -1,3 +1,5 @@
+# Question (i): Compute the distance of point P(1, 1) to the line x + y − 1 = 0.
+
 import matplotlib.pyplot as plt
 import numpy as np
 

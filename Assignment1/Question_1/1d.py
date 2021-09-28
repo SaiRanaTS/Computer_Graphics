@@ -1,3 +1,5 @@
+#Question (d): Find the angle between r and s, where r = (2, 0, 4) and s = (5, 6, 10).
+
 import numpy as np
 
 r = np.array([2,0,4])

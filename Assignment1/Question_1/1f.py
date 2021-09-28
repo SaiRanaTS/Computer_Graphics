@@ -1,3 +1,5 @@
+#Question (f): Compute the area of the triangle defined by points P1(5, 0, 0), P2(0, 0, 5), and P3(10, 0, 5).
+
 import numpy as np
 
 p1 = np.array([5,0,0])

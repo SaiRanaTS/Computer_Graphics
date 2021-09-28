@@ -1,3 +1,4 @@
+# Question (h): Compute the angle between the lines defined by 2x + 2y − 4 = 0 and 2x + 4y − 4 = 0.
 import numpy as np
 import matplotlib.pyplot as plt
 
