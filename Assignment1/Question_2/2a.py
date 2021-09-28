@@ -5,8 +5,6 @@ compute the barycentric coordinates for points:
 -PB(0, 0, 4)
 -PC(3, 1, 2)
 -PD(1, 1, 2)
-
-
 """
 
 import numpy as np
