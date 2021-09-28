@@ -5,6 +5,15 @@ why?
 
 import numpy as np
 
+"""
+Normal = (B-A)×(C-A)
+
+t =(A−O)⋅N / R⋅N
+
+p = O + tR
+
+"""
+
 def intersection(a,b,c,O,D):
     t = (np.dot(np.cross((b-a),(c-a)) ,(a-O))) / (np.dot(np.cross((b-a),(c-a)),D))
     pz = O + t * D
