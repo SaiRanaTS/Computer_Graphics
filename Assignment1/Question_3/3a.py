@@ -16,7 +16,37 @@ intersection record? If not, why?
 
 import numpy as np
 
-def evaluvation(c,r,d,o):
+
+"""
+Sphere = (P-C).(P-C)=Rˆ2
+Ray = P(t) = O + t D
+P = a point on sphere
+C = Sphere center
+R= Sphere radius
+O = Origin of the ray
+D = Direction of the ray
+--------------------------------
+(O+tD-C).(O+tD-C)=Rˆ2
+tˆ2D.D +2tD.(O-C)+(O-C).(O-C)- Rˆ2 = 0
+atˆ2 + bt + c = 0
+
+a = D.D
+b = 2.D.(O-C)
+c = (O-C).(O-C)- Rˆ2
+t =−b ± √(bˆ2 − 4 ac)/2a
+"""
+
+"""
+b2−4ac is the discriminant. 
+If, 
+  discriminant < 0 : The ray dont touch nor intersect the sphere
+  discriminant == 0 : The ray just touch the sphere
+  discriminant > 0 : The ray dont touch nor intersect the sphere
+"""
+
+
+
+def evaluvation(c,r,d,o):  # Function for eveluvation of interaction and finding T1 and T2
     a = np.dot(d,d)
     b = 2 * np.dot(d,(o-c))
     c = (np.dot((o-c),(o-c))) - (r**2)
@@ -28,11 +58,11 @@ def evaluvation(c,r,d,o):
     elif delta == 0:
         print('The ray just touch the sphere')
     elif delta < 0:
-        print("The ray dont touch nor intersect the sphere")
+        print('The ray dont touch nor intersect the sphere')
     return tp1, tp2
 
 
-def intersection(C, R, D, O):
+def intersection(C, R, D, O): #Function for finding interaction
     t1, t2 = evaluvation(C, R, D, O)
     Intersection_1 = O + (t1 * D)
     Intersection_2 = O + (t2 * D)
